@@ -1,5 +1,6 @@
 <?php
-session_start();
+require_once "auth_check.php";
+protegerRuta(['Administrador']);
 include("Mostrartablausuarios.php");
 include("conexion.php");
 include("AñadirUsuario.php");

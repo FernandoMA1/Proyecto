@@ -1,5 +1,6 @@
 <?php
-session_start();
+require_once "auth_check.php";
+protegerRuta(['Administrador', "Soporte"]);
 include("Mostrartablaclientes.php");
 include("conexion.php");
 include("menu.php");

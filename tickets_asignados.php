@@ -1,5 +1,6 @@
 <?php
-session_start();
+require_once "auth_check.php";
+protegerRuta(['Soporte']);
 include("Mostrartablatickets.php");
 include("conexion.php");
 include("menu.php");

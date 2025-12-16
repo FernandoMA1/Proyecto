@@ -1,6 +1,8 @@
 <?php
-session_start();
+
 $tickets_cliente = true;
+require_once "auth_check.php";
+protegerRuta(['Cliente']);
 include("Mostrartablatickets.php");
 include("conexion.php");
 include("menu.php");
